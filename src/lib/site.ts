@@ -1,7 +1,8 @@
 // Coordonnées : à confirmer par le cabinet. Laisser vide tant qu'elles ne sont pas validées.
 export const contact = {
-  phone: "", // ex. "+212 6 .. .. .. .."
-  whatsapp: "", // numéro au format international sans + ni espaces
+  phone: "0606647010",
+  phoneHref: "tel:+212606647010",
+  whatsapp: "212606647010",
   email: "",
   city: "Casablanca, Maroc",
 };

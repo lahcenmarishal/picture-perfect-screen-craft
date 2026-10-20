@@ -1,8 +1,9 @@
 import { useLanguage } from "@/components/LanguageProvider";
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, MapPin, Mail, Phone, Paperclip } from "lucide-react";
+import { ArrowRight, MapPin, Mail, Paperclip } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { OfficeContactLinks } from "@/components/SiteLayout";
 import hero from "@/assets/hero-villa.jpg";
 import residence from "@/assets/residence.jpg";
 import industrial from "@/assets/industrial.jpg";
@@ -87,7 +88,7 @@ export function HomeContact() {
     <img src={plans} alt="" className="contact-background" loading="lazy" width={1200} height={912}/>
     <div className="site-container contact-layout">
       <div className="contact-details"><h2>{t("Contact & Devis")}</h2><p>{t("Parlez-nous de votre projet, nous vous répondrons rapidement.")}</p>
-        <div><Phone/><span>{contact.phone || t("Téléphone à confirmer")}</span></div>
+        <OfficeContactLinks />
         <div><MapPin/><span>{t(contact.city)}</span></div>
         <div><Mail/><span>{contact.email || t("E-mail à confirmer")}</span></div>
       </div>

@@ -246,6 +246,9 @@
 .contact-details > p { font-size: 10px; margin-block: 5px 20px; }
 .contact-details > div { display: flex; gap: 15px; align-items: center; font-size: 11px; margin-top: 15px; }
 .contact-details svg { width: 20px; color: var(--gold); }
+.office-contact-links { display: grid; justify-items: start; gap: 8px; margin-block: 16px; }
+.office-contact-links > a { width: max-content; max-width: 100%; min-height: 34px; justify-content: flex-start; gap: 9px; border-radius: 0; font-size: 11px; }
+.office-contact-links svg { width: 17px; height: 17px; flex-shrink: 0; }
 .home-quote-form { padding: 12px 20px; background: color-mix(in oklab,var(--ink) 75%,transparent); border: 1px solid var(--border); border-radius: 8px; }
 .home-quote-form label { display: block; font-size: 8px; color: var(--muted-foreground); }
 .quote-top { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 15px; }

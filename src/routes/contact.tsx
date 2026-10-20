@@ -1,7 +1,7 @@
 import { useLanguage } from "@/components/LanguageProvider";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { PageHeader } from "@/components/SiteLayout";
+import { OfficeContactLinks, PageHeader } from "@/components/SiteLayout";
 import { contact } from "@/lib/site";
 import { submitQuoteRequest } from "@/lib/quote-requests";
 
@@ -64,12 +64,9 @@ function Contact() {
       <section className="mx-auto grid max-w-7xl gap-14 px-5 py-20 lg:grid-cols-[1fr_2fr]">
         <div className="space-y-4 text-sm">
           <p className="text-muted-foreground">{t("Nous vous répondrons dans les meilleurs délais.")}</p>
+          <OfficeContactLinks />
           <p>{t(contact.city)}</p>
-          {contact.phone && <p>{contact.phone}</p>}
           {contact.email && <p>{contact.email}</p>}
-          {contact.whatsapp && (
-            <a className="btn-outline-gold" href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer">{t("WhatsApp")}</a>
-          )}
         </div>
         {sent ? (
           <div className="border border-gold p-12" role="status">

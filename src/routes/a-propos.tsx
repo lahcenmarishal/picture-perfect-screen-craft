@@ -31,8 +31,8 @@ function About() {
       <section className="mx-auto grid max-w-7xl gap-14 px-5 py-24 lg:grid-cols-2">
         <img src={architecteUrl} alt={t("Rachid Fatnassi, architecte DPLG")} className="aspect-[4/5] w-full object-cover object-[45%_center]" loading="lazy" />
         <div>
-          <h2 className="text-5xl">{t("Rachid Fatnassi")}</h2>
-          <p className="mt-2 text-gold">{t("Architecte DPLG — Casablanca")}</p>
+          <h2 className="text-5xl">{t("FATNASSI Rachid")}</h2>
+          <p className="mt-2 text-gold">{t("L'architecte principal : Le cabinet d'architecture FATNASSI est dirigé par FATNASSI Rachid, Architecte DPLG diplome de l'Ecole d'Architecture Paris-Val-de-Seine ( ex Paris-Malaquais UP 1 )")}</p>
           <p className="mt-8 leading-relaxed text-muted-foreground">{t("Le cabinet FATNASSI RACHID accompagne particuliers, promoteurs et entreprises dans la conception et la réalisation de leurs projets : villas, immeubles résidentiels et bâtiments industriels.")}</p>
           <p className="mt-4 leading-relaxed text-muted-foreground">{t("Notre approche allie technicité, créativité et respect des normes, avec un accompagnement complet dans les démarches administratives.")}</p>
           <div className="mt-12 space-y-8">
