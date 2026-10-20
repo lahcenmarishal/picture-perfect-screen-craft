@@ -5,7 +5,7 @@ import { useState, type ReactNode } from "react";
 import { logoUrl } from "@/lib/brand-assets";
 import { contact, nav } from "@/lib/site";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 
 function LanguageSwitch() {
   const { language, setLanguage } = useLanguage();
@@ -55,6 +55,29 @@ export function Header() {
         </nav>
       )}
     </header>
+  );
+}
+
+export function OfficeContactLinks() {
+  const { t } = useLanguage();
+  return (
+    <div className="office-contact-links">
+      <Button asChild variant="outline">
+        <a href={contact.phoneHref} dir="ltr" aria-label={`${t("Téléphone")} ${contact.phone}`}>
+          <Phone aria-hidden="true" />
+          <span>{contact.phone}</span>
+        </a>
+      </Button>
+      <Button asChild variant="outline">
+        <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer" dir="ltr" aria-label={`WhatsApp ${contact.phone}`}>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M12.04 2c-5.5 0-9.98 4.47-9.98 9.97 0 1.76.46 3.49 1.33 5L2 22l5.15-1.35a9.95 9.95 0 0 0 4.88 1.27h.01c5.5 0 9.97-4.47 9.98-9.97a9.9 9.9 0 0 0-2.92-7.04A9.9 9.9 0 0 0 12.04 2Zm0 18.22h-.01a8.28 8.28 0 0 1-4.22-1.16l-.3-.18-3.06.8.82-2.98-.2-.31a8.25 8.25 0 0 1-1.27-4.42c0-4.59 3.74-8.32 8.33-8.32a8.26 8.26 0 0 1 5.88 2.44 8.27 8.27 0 0 1 2.44 5.89c0 4.59-3.74 8.33-8.32 8.33Zm4.57-6.24c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.41-1.74-.15-.25-.02-.39.11-.52.11-.11.25-.3.38-.44.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.44-.06-.13-.57-1.38-.78-1.89-.2-.5-.41-.43-.57-.44h-.49c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.29 3.8.6.26 1.07.42 1.44.53.61.19 1.17.16 1.61.1.49-.07 1.48-.61 1.69-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.3Z" />
+          </svg>
+          <span>{t("WhatsApp")}</span>
+          <span>{contact.phone}</span>
+        </a>
+      </Button>
+    </div>
   );
 }
 

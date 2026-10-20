@@ -17,3 +17,4 @@
 - Bundle brand images (logo, architect photo) as regular Vite imports exposed via `src/lib/brand-assets.ts`; Lovable CDN `/__l5e/` URLs do not resolve on external hosts like Vercel.
 - Admin access is granted only via public.user_roles rows (role 'admin') inserted manually; public sign-up is disabled, so never add a sign-up UI. Why: owner wants admins provisioned by UID directly in the database.
 - Project images live in a private storage bucket and are shown via signed URLs from src/lib/projects.ts. Why: the workspace blocks public buckets.
+- Shared office phone and WhatsApp links are rendered by OfficeContactLinks in SiteLayout and reused on the homepage and contact page, keeping destinations consistent.
