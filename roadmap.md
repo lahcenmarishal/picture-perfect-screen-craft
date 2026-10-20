@@ -1,0 +1,11 @@
+# Roadmap
+- [x] Complete Moroccan Tamazight translation across the site and verify language switching
+- [x] Reproduce the supplied mockup faithfully on the homepage, with mobile adaptation
+- [x] Public site: Accueil, À propos, Services (+ detail pages), Réalisations, Permis, Contact
+- [x] Admin area to manage réalisations (login only, admin role assigned in database)
+- [ ] Quote delivery — not started
+- [ ] Real contact info (phone, WhatsApp, email) — waiting on client
+- [ ] Real project photos — waiting on client
+- [x] Remove testimonials and emphasize video titles on the homepage and Videos page
+- [x] Arabic version (RTL), including navigation and all public pages
+- [ ] Original logo compatible with Vercel deployment
