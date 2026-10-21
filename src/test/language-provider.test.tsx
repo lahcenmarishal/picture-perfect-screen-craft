@@ -4,7 +4,7 @@ import { LanguageProvider, useLanguage, languages } from "@/components/LanguageP
 import ar from "@/lib/translations-ar.json";
 import en from "@/lib/translations-en.json";
 import es from "@/lib/translations-es.json";
-import it from "@/lib/translations-it.json";
+import itTranslations from "@/lib/translations-it.json";
 import zgh from "@/lib/translations-zgh.json";
 
 const architectDescription = "L'architecte principal : Le cabinet d'architecture FATNASSI est dirigé par FATNASSI Rachid, Architecte DPLG diplome de l'Ecole d'Architecture Paris-Val-de-Seine ( ex Paris-Malaquais UP 1 )";
@@ -46,7 +46,7 @@ describe("requested site translations", () => {
   });
 
   it("translates the principal architect description in every available language", () => {
-    for (const dictionary of [ar, zgh, en, es, it]) {
+    for (const dictionary of [ar, zgh, en, es, itTranslations]) {
       expect(dictionary[architectDescription]).not.toBe(architectDescription);
     }
   });
