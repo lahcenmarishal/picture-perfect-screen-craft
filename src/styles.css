@@ -361,3 +361,18 @@ html[dir=rtl] svg.lucide-arrow-right, html[dir=rtl] svg.lucide-chevron-right { t
 .credentials-list p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--foreground); }
 @media(max-width:900px) { .credentials-layout { grid-template-columns: 1fr; gap: 30px; } .credentials-copy h2 { font-size: 26px; } }
 @media(max-width:600px) { html[dir=rtl] .brand-name { font-size: 14px; line-height: 1.5; } }
+
+/* Office maps (accueil + contact) */
+.office-maps { padding-block: 90px; border-top: 1px solid var(--border); background: var(--card); }
+.office-maps h2 { font-size: 40px; margin-top: 6px; }
+.maps-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.map-card { margin: 0; border: 1px solid var(--border); background: var(--background); overflow: hidden; }
+.map-card iframe { width: 100%; height: 320px; border: 0; display: block; }
+.map-card figcaption { display: flex; flex-direction: column; gap: 3px; padding: 14px 16px; font-size: 12px; color: var(--muted-foreground); }
+.map-card figcaption strong { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+@media (max-width: 768px) { .maps-grid { grid-template-columns: 1fr; } .map-card iframe { height: 260px; } }
+
+/* Bouton WhatsApp flottant */
+.floating-whatsapp { position: fixed; bottom: 22px; inset-inline-end: 22px; z-index: 60; width: 54px; height: 54px; border-radius: 999px; background: #25d366; color: #fff; display: grid; place-items: center; box-shadow: 0 8px 24px rgb(0 0 0 / .35); transition: transform .2s ease; }
+.floating-whatsapp:hover { transform: scale(1.08); }
+.floating-whatsapp svg { width: 28px; height: 28px; }

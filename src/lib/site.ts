@@ -3,7 +3,7 @@ export const contact = {
   phone: "0606647010",
   phoneHref: "tel:+212606647010",
   whatsapp: "212606647010",
-  email: "",
+  email: "fatnassi.architecte@gmail.com",
   city: "Casablanca, Maroc",
 };
 

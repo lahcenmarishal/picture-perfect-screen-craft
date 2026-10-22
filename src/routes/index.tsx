@@ -10,6 +10,7 @@ import { useState } from "react";
 import { Building2, DraftingCompass, ClipboardList, Files, SearchCheck, Network, CalendarDays, MapPin, Users, FileText, ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HomeContact, ProjectGallery } from "@/components/HomeShowcase";
+import { OfficeMaps } from "@/components/OfficeMaps";
 import { HomeVideos, HomeVirement } from "@/components/HomeExtras";
 import garden from "@/assets/villa-garden.jpg";
 
@@ -79,6 +80,7 @@ function Index() {
       <HomeVideos/>
       <HomeVirement/>
       <HomeContact/>
+      <OfficeMaps/>
     </div>
   );
 }
