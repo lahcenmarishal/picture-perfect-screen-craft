@@ -2,6 +2,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { OfficeContactLinks, PageHeader } from "@/components/SiteLayout";
+import { OfficeMaps } from "@/components/OfficeMaps";
 import { contact } from "@/lib/site";
 import { submitQuoteRequest } from "@/lib/quote-requests";
 
@@ -66,7 +67,6 @@ function Contact() {
           <p className="text-muted-foreground">{t("Nous vous répondrons dans les meilleurs délais.")}</p>
           <OfficeContactLinks />
           <p>{t(contact.city)}</p>
-          {contact.email && <p>{contact.email}</p>}
         </div>
         {sent ? (
           <div className="border border-gold p-12" role="status">
@@ -93,6 +93,7 @@ function Contact() {
           </form>
         )}
       </section>
+      <OfficeMaps />
     </>
   );
 }

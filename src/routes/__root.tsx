@@ -12,7 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { Header, Footer } from "@/components/SiteLayout";
+import { Header, Footer, FloatingWhatsApp } from "@/components/SiteLayout";
 import { LanguageProvider, useLanguage } from "@/components/LanguageProvider";
 import { Button } from "@/components/ui/button";
 
@@ -135,6 +135,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <FloatingWhatsApp />
       </LanguageProvider>
     </QueryClientProvider>
   );

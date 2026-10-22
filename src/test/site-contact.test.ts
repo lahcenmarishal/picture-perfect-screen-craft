@@ -10,4 +10,8 @@ describe("office contact details", () => {
     expect(contact.phoneHref).toBe("tel:+212606647010");
     expect(contact.whatsapp).toBe("212606647010");
   });
+
+  it("keeps the owner-provided email verbatim", () => {
+    expect(contact.email).toBe("fatnassi.architecte@gmail.com");
+  });
 });
