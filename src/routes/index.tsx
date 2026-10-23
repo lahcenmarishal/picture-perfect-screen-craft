@@ -62,7 +62,7 @@ function Index() {
         <Link to="/a-propos" className="about-seal"><img src={logoUrl} alt={t("Découvrir le cabinet FATNASSI RACHID")} loading="lazy"/></Link>
       </div></section>
       <section className="home-credentials"><div className="site-container credentials-layout">
-        <div className="credentials-visual"><img src={architecteIllustration} alt={t("L’architecte au travail — illustration")} loading="lazy" width={1024} height={1024}/></div>
+        <div className="credentials-visual"><img src={architecteIllustration} alt={t("L’architecte au travail, au sein du cabinet")} loading="lazy" width={1254} height={1254}/></div>
         <div className="credentials-copy"><p className="eyebrow">{t("Autorisations d’exercice")}</p>
           <h2>{t("Un architecte autorisé")}<br/>{t("dans plusieurs pays")}</h2>
           <ul className="credentials-list">
