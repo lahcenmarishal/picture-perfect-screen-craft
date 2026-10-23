@@ -10,8 +10,8 @@ export const officeMaps = [
   },
   {
     label: "France",
-    caption: "6 Rue de la Tour, 23170 Lépaud, France",
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2180.980734071086!2d2.3850055763166482!3d46.24105017109727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa1cc06fc0aa85%3A0xb8009c1f8c2563f9!2s6%20Rue%20de%20la%20Tour%2C%2023170%20L%C3%A9paud%2C%20France!5e1!3m2!1sfr!2sma!4v1792638443125!5m2!1sfr!2sma",
+    caption: "41 La Grande Rue, 23170 Lépaud, France",
+    src: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4361.829630757349!2d2.378753596577622!3d46.242708434389144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s41%20La%20Grande%20Rue%2C%2023170%20L%C3%A9paud!5e1!3m2!1sfr!2sma!4v1792796551623!5m2!1sfr!2sma",
   },
 ] as const;
 
