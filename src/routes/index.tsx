@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import hero from "@/assets/hero-villa.jpg";
 import plans from "@/assets/plans.jpg";
 import { architecteUrl, logoUrl } from "@/lib/brand-assets";
-import architecteIllustration from "@/assets/architecte-illustration-flags.png";
+import architecteIllustration from "@/assets/architecte-autorisations.png";
 import { Flag } from "@/components/Flag";
 import { services } from "@/lib/site";
 import { useState } from "react";
